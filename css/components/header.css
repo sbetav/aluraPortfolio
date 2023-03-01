@@ -65,7 +65,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header__menuBtn {
     background-color: transparent;
     border: none;

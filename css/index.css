@@ -73,3 +73,11 @@ body {
 .dot {
   color: var(--primary-color);
 }
+
+
+.message{
+  color: var(--text-secondary);
+  font-size: .87rem;
+  margin-top: 8px;
+  opacity: .7;
+}

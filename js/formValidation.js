@@ -15,8 +15,8 @@ const validateEmpty = (input, message) => {
   }
 };
 
+const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 const validateEmail = (input) => {
-  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (input.value.match(emailPattern)) {
     input.classList.remove("invalid-input");
     input.nextElementSibling.innerText = "";
@@ -53,10 +53,14 @@ submitButton.addEventListener("click", (e) => {
   if (
     inputName.value.length > 0 &&
     inputEmail.value.length > 0 &&
+    inputEmail.value.match(emailPattern) &&
     inputSubject.value.length > 0 &&
     inputMessage.value.length > 0
   ) {
-    alert(`"El mensaje ha sido enviado correctamente"`);
+    submitButton.innerText = "Enviado!";
+    setTimeout(() => {
+      submitButton.innerText = "Enviar";
+    }, 2000);
     document.getElementById("contact-form").reset();
   }
 });

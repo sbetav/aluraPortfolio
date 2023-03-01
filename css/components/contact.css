@@ -43,6 +43,7 @@
     width: 100%;
     padding: 30px 38px;
     border-radius: var(--radius);
+    gap: 6px;
 }
 
 .contact__form--group{
@@ -86,10 +87,13 @@
     padding: .6rem;
     cursor: pointer;
     margin-top: 8px;
+    font-weight: 500;
+    height: 40px;
 }
 
 .invalid-input{
     border: 2px solid var(--error);
+    animation: fadeInput .3s;
 }
 
 .input-invalid__message{
@@ -98,4 +102,13 @@
     font-size: .9rem;
     height: 15px;
     text-align: right;
+}
+
+@keyframes fadeInput {
+    0% {
+        border: 2px solid transparent;
+    }
+    100% {
+        border: 2px solid var(--error);
+    }
 }
