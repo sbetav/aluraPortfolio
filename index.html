@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/components/header.css" />
+    <link rel="stylesheet" href="./css/components/hero.css" />
+    <link rel="stylesheet" href="./css/components/about.css" />
+    <link rel="stylesheet" href="./css/components/portfolio.css" />
+    <link rel="stylesheet" href="./css/components/contact.css" />
+    <link rel="stylesheet" href="./css/components/footer.css" />
+
+    <title>Santiago Betancur</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="header">
+            <h1>
+                <a href="#" class="header__logo">
+                    sbetav<span class="dot">.</span>
+                </a>
+            </h1>
+
+
+
+            <nav class="header__nav">
+                <button class="header__menuBtn">
+                    <i class="fa-solid fa-bars header__menuBtn__icon"></i>
+                </button>
+
+                <div class="header__nav__list__container">
+                    <ul class="header__nav__list">
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav__link">Inicio</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#about" class="header__nav__link">Acerca de</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#portfolio" class="header__nav__link">Portafolio</a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#contact" class="header__nav__link">Contacto</a>
+                        </li>
+
+                        <div class="header__nav__icon__container">
+                            <a href="https://www.linkedin.com/in/santiago-betancur/" target="_blank">
+                                <i class="fa-brands fa-linkedin header__nav__icon"></i>
+                            </a>
+                            <a href="https://github.com/sbetav" target="_blank">
+                                <i class="fa-brands fa-github header__nav__icon"></i>
+                            </a>
+
+                        </div>
+
+                        <button class="header__closeBtn">
+                            <i class="fa-solid fa-xmark header__menuBtn__icon"></i>
+                        </button>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-container">
+            <div class="hero">
+                <div class="hero__info">
+                    <div class="hero__text">
+                        <p class="hero__text--greeting">Hola, soy Santiago 👋</p>
+                        <h2 class="hero__text--title">Desarrollador Web</h2>
+                        <p class="hero__text--desc">
+                            Y estudiante frontend de Alura Latam
+                        </p>
+                    </div>
+
+                    <div class="hero__buttons">
+                        <a class="btn" href="./img/cv.pdf" target="_blank">Curriculum <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#" class="btn btn--filled">Portafolio <i
+                                class="fa-solid fa-arrow-right btn__arrow-icon"></i></a>
+                    </div>
+                </div>
+
+                <img class="hero__img" src="./img/profile-pic.png" alt="Santiago Betancur" class="hero__img" />
+            </div>
+        </section>
+        <section class="about-container" id="about">
+            <div class="about">
+                <div class="about__txt">
+                    <h2 class="about__txt--title">Acerca de mí<span class="dot">.<span></h2>
+                    <p class="about__txt--desc">
+                        Mi nombre es Santiago Betancur, tengo 18 años y actualmente resido en Colombia. Soy estudiante
+                        de Ingeniería de Software en la Universidad Politécnico Grancolombiano. Me apasiona el
+                        desarrollo web y la programación en general. Hago parte de la formación brindada por Alura
+                        Latam, lo que me permite estar constantemente aprendiendo nuevas tecnologías y mejorar mis
+                        habilidades.
+                    </p>
+                </div>
+
+                <div class="about__skills">
+                    <h3 class="about__skills--title">Habilidades:</h3>
+                    <ul class="about__skills--list">
+                        <li class="about__skills--item">
+                            HTML
+                        </li>
+                        <li class="about__skills--item">
+                            CSS
+                        </li>
+                        <li class="about__skills--item">
+                            JavaScript
+                        </li>
+                        <li class="about__skills--item">
+                            Git
+                        </li>
+                        <li class="about__skills--item">
+                            Github
+                        </li>
+                </div>
+
+                <div class="about__studies">
+                    <h3 class="about__studies--title">Formación:</h3>
+                    <ul class="about__studies--list">
+                        <li class="about__studies--item">
+                            Ingeniería de Software
+                            <span class="about__studies--date">
+                                <br>
+                                Politécnico Grancolombiano
+                                <br>
+                                2022 - Actualidad
+                            </span>
+                        </li>
+                        <li class="about__studies--item">
+                            Desarrollo Web Frontend
+                            <span class="about__studies--date">
+                                <br>
+                                Alura
+                                <br>
+                                2022 - Actualidad
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="portfolio-container" id="portfolio">
+            <div class="portfolio">
+                <h2 class="portfolio__title">Mis Proyectos<span class="dot">.</span></h2>
+                <div class="portfolio__cards-container">
+
+                    <div class="portfolio__card">
+                        <img src="./img/project1.png" alt="Portfolio Image" class="portfolio__card--img" />
+                        <div class="portfolio__card--info">
+                            <h3 class="portfolio__card--title">Proyecto 1</h3>
+                            <p class="portfolio__card--desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor suscipit aliquid
+                                pariatur at, quisquam quo.
+                            </p>
+                            <div class="portfolio__card--button-container">
+                                <a href="#" class="portfolio__card--btn btn">
+                                    Código <i class="fa-brands fa-github card__btn-icon"></i>
+                                </a>
+                                <a href="#" class="portfolio__card--btn btn btn--filled ">
+                                    Demo <i class="fa-solid fa-arrow-up-right-from-square card__btn-icon"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio__card">
+                        <img src="./img/project2.png" alt="Portfolio Image" class="portfolio__card--img" />
+                        <div class="portfolio__card--info">
+                            <h3 class="portfolio__card--title">Proyecto 2</h3>
+                            <p class="portfolio__card--desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, deserunt libero? Ullam
+                                doloremque exercitationem.
+                            </p>
+                            <div class="portfolio__card--button-container">
+                                <a href="#" class="portfolio__card--btn btn">
+                                    Código <i class="fa-brands fa-github card__btn-icon"></i>
+                                </a>
+                                <a href="#" class="portfolio__card--btn btn btn--filled ">
+                                    Demo <i class="fa-solid fa-arrow-up-right-from-square card__btn-icon"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="portfolio__card">
+                        <img src="./img/project3.png" alt="Portfolio Image" class="portfolio__card--img" />
+                        <div class="portfolio__card--info">
+                            <h3 class="portfolio__card--title">Proyecto 3</h3>
+                            <p class="portfolio__card--desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores expedita nihil
+                                optio labore maxime dignissimos tempore, unde amet laudantium doloribus, commodi sit
+                                impedit. Vitae delectus assumenda numquam animi officia nulla, fugiat nemo voluptates
+                                repudiandae, libero fugit consequatur minima labore eum quisquam odio aspernatur quas
+                                adipisci repellendus hic, in voluptatibus?
+                            </p>
+                            <div class="portfolio__card--button-container">
+                                <a href="#" class="portfolio__card--btn btn">
+                                    Código <i class="fa-brands fa-github card__btn-icon"></i>
+                                </a>
+                                <a href="#" class="portfolio__card--btn btn btn--filled ">
+                                    Demo <i class="fa-solid fa-arrow-up-right-from-square card__btn-icon"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact-container" id="contact">
+            <div class="contact-bg">
+                <div class="contact">
+
+
+                    <form class="contact__form" name="contactForm" id="contact-form">
+                        <h2 class="contact__title">Contacto<span class="dot">.</span></h2>
+                        <div class="contact__form--group">
+                            <label for="name" class="contact__form--label">Nombre</label>
+                            <input type="text" name="name" id="name" class="contact__form--input"/>
+                            <span class="input-invalid__message"></span>
+                        </div>
+                        <div class="contact__form--group">
+                            <label for="email" class="contact__form--label">Correo</label>
+                            <input type="email" name="email" id="email" class="contact__form--input" />
+                            <span class="input-invalid__message"></span>
+                        </div>
+
+                        <div class="contact__form--group">
+                            <label for="subject" class="contact__form--label">Asunto</label>
+                            <input type="text" name="subject" id="subject" class="contact__form--input" />
+                            <span class="input-invalid__message"></span>
+                        </div>
+                        <div class="contact__form--group">
+                            <label for="message" class="contact__form--label">Mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                class="contact__form--input"></textarea>
+                            <span class="input-invalid__message"></span>
+                        </div>
+
+                        <div class="contact__form--group">
+                            <button name="submitBtn" type="submit" class="contact__form--btn">Enviar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <div class="footer">
+            <p class="footer__text">Made with ❤️ by <a href="">sbetav</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/headerMenu.js"></script>
+    <script src="./js/formValidation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-bg);
+}
+
+.about{
+    padding: var(--padding-section);
+    max-width: var(--max-width);
+    width: var(--width);
+    color: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 4.4rem;
+}
+
+.about__txt{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.about__txt--title{
+    font-size: var(--title-size);
+    color: var(--text);
+    font-weight: bold;
+}
+
+
+.about__txt--desc{
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    word-spacing: 4px;
+    line-height: 1.15;
+}
+
+.about__skills--title{
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about__skills--item{
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: .6rem;
+}
+
+.about__skills--item::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+
+.about__studies--title{
+    font-size: 1.5rem;
+    color: var(--text);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about__studies--item{
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: .6rem;
+}
+
+.about__studies--item::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.about__studies--date{
+    font-size: 1rem;
+    font-style: italic;
+    opacity: .7;
+    line-height: 1.4;
+}
